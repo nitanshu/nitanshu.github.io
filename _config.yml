@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Rails Blogs
 locale:           en_US
-url:
+url:              http://nitanshu.github.io/
 
 
 # Jekyll configuration
@@ -26,13 +26,13 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Nitanshu Verma
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
+  bio: "Crafting Ruby Driving Rails!!!"
+  email: nitanshu1991@gmail.com
+  disqus-shortname: nitanshuverma
+  twitter: @nitanshuverma1
+  facebook: https://www.facebook.com/nitanshu.verma
   google:
     plus: #username
     analytics:
@@ -40,9 +40,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  github: nitanshu
+  stackoverflow: 2983135/nitanshu-verma
+  linkedin: https://www.linkedin.com/pub/nitanshu-verma/6b/461/5b
   xing: #username
   instagram: #username
   lastfm: #username
