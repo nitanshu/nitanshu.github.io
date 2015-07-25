@@ -8,7 +8,8 @@ image:
   feature: sample-image-2.jpg
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Hii, This is Nitanshu Verma ruby and rails developer nothing to develop but lot to innovate as this blogging intention template may tell
+lot about me as I am a developer so I started sharing good things for others.
 
 ## Minimal Mistakes is all about:
 
