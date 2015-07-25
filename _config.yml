@@ -33,12 +33,15 @@ owner:
   disqus-shortname: nitanshuverma
   twitter: nitanshuverma1
   facebook: nitanshu.verma
-  google: /u/0/115831000849180795957/posts
-
+  google:
+    plus: /u/0/115831000849180795957/posts
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
   bing-verify:
   github: nitanshu
   stackoverflow: 2983135/nitanshu-verma
-  hackerearth: nitanshu
   linkedin: nitanshu-verma/6b/461/5b
   xing: #username
   instagram: #username
