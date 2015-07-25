@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Rails Blogs
+title:            Rails Blog
 locale:           en_US
-url:              https://nitanshu.github.io/
+url:              https://nitanshu.github.io
 
 
 # Jekyll configuration
@@ -32,7 +32,7 @@ owner:
   email: nitanshu1991@gmail.com
   disqus-shortname: nitanshuverma
   twitter: nitanshuverma1
-  facebook: https://www.facebook.com/nitanshu.verma
+  facebook: nitanshu.verma
   google:
     plus: #username
     analytics:
@@ -42,7 +42,7 @@ owner:
   bing-verify:
   github: nitanshu
   stackoverflow: 2983135/nitanshu-verma
-  linkedin: https://www.linkedin.com/pub/nitanshu-verma/6b/461/5b
+  linkedin: pub/nitanshu-verma/6b/461/5b
   xing: #username
   instagram: #username
   lastfm: #username
