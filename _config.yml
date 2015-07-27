@@ -23,7 +23,6 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
-
 # Site owner
 owner:
   name: Nitanshu Verma
@@ -33,16 +32,16 @@ owner:
   disqus-shortname: nitanshuverma
   twitter: nitanshuverma1
   facebook: nitanshu.verma
-#  google:
-#    plus: /u/0/115831000849180795957/blogs
-#    analytics:
-#    verify:
-#    ad-client:
-#    ad-slot:
-#  bing-verify:
+  google:
+    plus: /u/0/115831000849180795957/blogs
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: nitanshu
   stackoverflow: 2983135/nitanshu-verma
-  #linkedin: nitanshu-verma/6b/461/5b
+  linkedin: pub/nitanshu-verma/6b/461/5b
   xing: #username
   instagram: #username
   lastfm: #username
