@@ -8,5 +8,5 @@ image:
   feature: sample-image-2.jpg
 ---
 
-Hii, This is Nitanshu Verma ruby and rails developer nothing to develop but lot to innovate as this blogging intention template may tell
-lot about me as I am a developer so I started sharing good things for others.
+Hii, This is Nitanshu Verma ruby and rails developer lot to develop but more to innovate as this blog is intended to help others who may face
+problem regarding the topic I posted. This blog may tell lot about me as I am a developer so I started sharing good things for others.
