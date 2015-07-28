@@ -7,3 +7,4 @@ codekit-config.json
 node_modules
 _asset_bundler_cache
 _sample_theme_setup.md
+.idea/
