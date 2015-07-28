@@ -1,6 +1,6 @@
 
 ---
-layout: post
+layout: project
 title: "Sample App(Rails)"
 excerpt: "Link to show sample app"
 tags: [sample post, link post]

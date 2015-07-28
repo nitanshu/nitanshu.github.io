@@ -1,6 +1,6 @@
 
 ---
-layout: post
+layout: project
 title: "NoteApp(AngularJS and Rails)"
 excerpt: "Example and code for using link posts."
 tags: [sample post, link post]
