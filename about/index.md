@@ -13,12 +13,15 @@ problem regarding the topic I posted. This blog may tell lot about me as I am a 
 
 ##Specialities:
 
-*Ruby
-*Rails
-*jQuery
-*Git
+* Ruby
 
->Live to develop and share not to brag what you know
+* Rails
+
+* jQuery
+
+* Git
+
+>Live to develop and share not to brag on what you know!!!
 
 
 
