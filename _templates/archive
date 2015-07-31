@@ -1,6 +1,5 @@
 ---
 layout: post-index
-layout: project-index
 title: {{ title }}
 permalink:
 modified:
