@@ -15,6 +15,7 @@ I tried writing a perfect email regex which can be supported for almost every st
  {% highlight ruby %}
 
     \A[a-zA-Z0-9]*[\.?*[a-zA-Z0-9]]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}\z
+
  {% endhighlight %}
 
 
