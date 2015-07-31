@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: project-index
 title: All Projects
-tags: [project, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+excerpt: "A List of Projects"
 image:
   feature: sample-image-3.jpg
 ---

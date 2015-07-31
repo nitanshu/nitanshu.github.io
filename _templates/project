@@ -1,9 +1,10 @@
 ---
-layout: post-index && project-index
+layout: {{ layout }}
 title: {{ title }}
-permalink:
 modified:
+categories: {{ dir }}
 excerpt:
+tags: []
 image:
   feature:
 ---
