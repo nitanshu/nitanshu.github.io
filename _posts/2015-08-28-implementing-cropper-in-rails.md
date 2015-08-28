@@ -112,7 +112,6 @@ Code for cropping reading image locally
     });
 {% endhighlight %}
 
-
 after this you need to handle this cropped data you can do it in both way by using Rmagick in backend or you can handle it from javascript I do it by Rmagick
 
  {% highlight ruby %}
