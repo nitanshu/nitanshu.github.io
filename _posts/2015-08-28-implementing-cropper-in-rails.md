@@ -87,7 +87,6 @@ Code for cropping reading image locally
                     cropBoxResizable: false,
                     modal: true,
                     built: function () {
-                        // Strict mode: set crop box data first
                         canvasData = $image.cropper('getCanvasData');
                         var cropBox = {
                             width : 150,
