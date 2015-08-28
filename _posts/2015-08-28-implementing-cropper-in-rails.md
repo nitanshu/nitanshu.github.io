@@ -9,7 +9,7 @@ comments: true
 
 ##Cropper
 
-To implement cropper in rails for cropping and zoom in and out you
+To implement cropper in rails for cropping and zoom in and out you need to download it from [cropper home page](http://fengyuanchen.github.io/cropper/)
 
 ### application.css
 
