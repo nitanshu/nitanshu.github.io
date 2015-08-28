@@ -114,19 +114,19 @@ Code for cropping reading image locally
 after this you need to handle this cropped data you can do it in both way by using Rmagick in backend or you can handle it from javascript I do it by Rmagick
 
  {% highlight ruby %}
-	def crop_profile_pic
-		img = Magick::Image.from_blob(params[:user][:profile_pic].read)[0]
-		cropped_image=img.crop(params[:x].to_f,params[:y].to_f,params[:width].to_f,params[:height].to_f).thumbnail(User::T_HEIGHT,User::T_WIDTH)
-		dir=FileUtils.mkdir(Rails.root/"#{current_user.email}")
-		cropped_image.write("png:" + "#{dir[0]}/#{params[:user][:profile_pic].original_filename}")
-		f=File.open("#{dir[0]}/#{params[:user][:profile_pic].original_filename}")
-		current_user.profile_pic = f
-		current_user.save
-		FileUtils.rm_rf(dir)
-	end
+  def crop_profile_pic
+	img = Magick::Image.from_blob(params[:user][:profile_pic].read)[0]
+	cropped_image=img.crop(params[:x].to_f,params[:y].to_f,params[:width].to_f,params[:height].to_f).thumbnail(User::T_HEIGHT,User::T_WIDTH)
+	dir=FileUtils.mkdir(Rails.root/"#{current_user.email}")
+	cropped_image.write("png:" + "#{dir[0]}/#{params[:user][:profile_pic].original_filename}")
+	f=File.open("#{dir[0]}/#{params[:user][:profile_pic].original_filename}")
+	current_user.profile_pic = f
+	current_user.save
+	FileUtils.rm_rf(dir)
+  end
  {% endhighlight %}
 
 It looks complicated but it is the perfect way to do this.
 
-Thank you for reading this blog.
+> Thank you for reading this blog.
 
