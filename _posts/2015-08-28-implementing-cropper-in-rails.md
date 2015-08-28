@@ -62,3 +62,73 @@ Div where I am showing my uploaded or cropped image is
        </div>
      <% end %>
 {% endhighlight %}
+
+
+Code for cropping reading image locally
+
+{% highlight jquery %}
+    $('#profile_pic_default').dblclick(function () {
+        $('#profile_photo_upload').click();
+        $('#profile_photo_upload').change(function (e) {
+            e.preventDefault();
+            $('.modal-dialog').addClass('modal-lg');
+            var tmppath = URL.createObjectURL(e.target.files[0]);
+            var $image =   $("img#crop_profile_pic").fadeIn().attr('src',tmppath),
+                    cropBoxData,
+                    canvasData;
+                    $('.modal-window').modal('show');
+            $('.modal-window').on('shown.bs.modal', function () {
+                $image.cropper({
+                    strict: true,
+                    guides: true,
+                    highlight: true ,
+                    dragCrop: false,
+                    cropBoxMovable: true,
+                    cropBoxResizable: false,
+                    modal: true,
+                    built: function () {
+                        // Strict mode: set crop box data first
+                        canvasData = $image.cropper('getCanvasData');
+                        var cropBox = {
+                            width : 150,
+                            height : 150
+                        }
+                        $image.cropper('setCropBoxData', cropBox);
+                        $image.cropper('setCanvasData', canvasData);
+                        console.log(canvasData)
+                    }
+                });
+            }).submit('#submit_crop', function () {
+                $('.modal-window').modal('hide');
+                cropBoxData = $image.cropper('getCropBoxData');
+                canvasData = $image.cropper('getCanvasData');
+                var getData = $image.cropper('getData');
+                $('#width').val(getData.width   );
+                $('#height').val(getData.height);
+                $('#x').val(getData.x);
+                $('#y').val(getData.y);
+                $image.cropper('destroy');
+            });
+        });
+    });
+{% endhighlight %}
+
+
+after this you need to handle this cropped data you can do it in both way by using Rmagick in backend or you can handle it from javascript I do it by Rmagick
+
+ {% highlight ruby %}
+	def crop_profile_pic
+		img = Magick::Image.from_blob(params[:user][:profile_pic].read)[0]
+		cropped_image=img.crop(params[:x].to_f,params[:y].to_f,params[:width].to_f,params[:height].to_f).thumbnail(User::T_HEIGHT,User::T_WIDTH)
+		dir=FileUtils.mkdir(Rails.root/"#{current_user.email}")
+		cropped_image.write("png:" + "#{dir[0]}/#{params[:user][:profile_pic].original_filename}")
+		f=File.open("#{dir[0]}/#{params[:user][:profile_pic].original_filename}")
+		current_user.profile_pic = f
+		current_user.save
+		FileUtils.rm_rf(dir)
+	end
+ {% endhighlight %}
+
+ It looks complicated but it is the perfect way to do this.
+
+ Thank you for reading this blog.
