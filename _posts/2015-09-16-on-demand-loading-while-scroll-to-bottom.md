@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On demand loading of content while scroll the browser to the bottom
-excerpt: "Loading content while scroll the bar to the bottom is normal"
+excerpt: "Loading content while scroll the bar to the bottom is done with the help of pagination"
 tags: [sample post, code, highlighting]
 modified: 2015-09-11
 comments: true
@@ -15,11 +15,17 @@ There are so many plugins which provides the functionality of loading content wh
 
 As plugins are limited to some extent but may be your requirement demands more than a plugin can provide the you need to code by your own.
 
-### application.css
+What this code will do it will load content
+###Setting up div where the scrolling js would apply
 
-{% highlight css %}
+{% highlight html %}
 
-  *= require cropper
+<div class="row sheets_container">
+  <%= render partial: 'sheets/sheet', collection: @sheets, locals: { project: @project } %>
+  <%= paginate @sheets, params: { format: :js } %>
+</div>
+<div class="load_all text-right form-group">
+</div>
 
 {% endhighlight %}
 
@@ -32,7 +38,7 @@ I wrote a js file for scrolling to the bottom and loading content.
 function scroll_sheet(total_sheets, load_all_sheets_url) {
     jQuery.ajaxSetup({async:false});
     var scroll_counter = 0;
-    if (total_sheets > $('.sheet-block').size()) {
+    if (total_sheets > $('.sheet-block').size()) { // Here $('.sheet-block').size() is a class where the content are paginated
         $(window).scroll(function (e) {
             if (scroll_counter < 3) {
                 if (($(window).scrollTop() + $(window).height()) > ($(document).height() - 2)) {
@@ -61,6 +67,44 @@ function scroll_sheet(total_sheets, load_all_sheets_url) {
     }
 }
 
+
+{% endhighlight %}
+
+###controller
+
+This is your controller's action where you are fetching the sheets for each scroll.
+
+{% highlight ruby %}
+
+ def show
+    @sheets = @project.sheets.page(params[:page]).per(8)
+ end
+
+{% endhighlight %}
+
+This is the action where you need to load rest of the content.
+
+{% highlight ruby %}
+
+  def load_balance_sheets
+    if @sheet = @project.sheets.where(token: params[:sheet_token]).take
+      @sheets = @project.sheets.where(id: (@sheet.id + 1)..Float::INFINITY)
+      render :action => 'show'
+    else
+      render :js => "alert('Unable to fetch sheets.');"
+    end
+  end
+
+{% endhighlight %}
+
+
+If you need to made this js available throughout the application then you need to do this:
+
+### application.js
+
+{% highlight js %}
+
+  // require scroll_sheet
 
 {% endhighlight %}
 
