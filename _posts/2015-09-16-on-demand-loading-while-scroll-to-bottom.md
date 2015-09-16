@@ -15,7 +15,8 @@ There are so many plugins which provides the functionality of loading content wh
 
 As plugins are limited to some extent but may be your requirement demands more than a plugin can provide the you need to code by your own.
 
-What this code will do it will load content
+What this code will do it will load content while scroll to the bottom for three times and then it will append a button to load all which will load rest of the content.
+
 ###Setting up div where the scrolling js would apply
 
 {% highlight html %}
