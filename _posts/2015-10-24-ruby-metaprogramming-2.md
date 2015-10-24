@@ -16,17 +16,15 @@ Since all methods are implemented and stored by the class definition, it should 
 class Foo
 end
 
-foo=Foo.new
-def foo.shout
+foobar=Foo.new
+def foobar.shout
   puts "Foo Foo Foo!"
 end
+
 foo.shout
+Foo Foo Foo!
 
 p Foo.new.respond_to?(:shout)
-
-stdout:
-
-Foo Foo Foo!
 false
 
 {% endhighlight%}
@@ -108,4 +106,4 @@ EOT
 foobar.singleton_methods # => ["foo"]
 {% endhighlight%}
 
-Thanks for reading!!!   
+Thanks for reading!!!
