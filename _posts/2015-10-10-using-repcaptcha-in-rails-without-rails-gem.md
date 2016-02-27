@@ -19,7 +19,7 @@ To use google recaptcha in your application you need to obtain a key value pair 
 To get the the keys [click here](https://www.google.com/recaptcha/intro/index.html)
 
 It will redirect you to google reCAPTCHA home page -> Get reCAPTCHA -> fill the form where label is the label for your site and domain is the domain name of your site.
-![Alt text](/images/bio-photo-2.jpg)
+![recaptcha form](/images/google_recaptcha.jpg)
 
 then you will get the keys site key and secret key.Now put this where you want the google recaptcha
 {% highlight html %}
@@ -29,6 +29,8 @@ then you will get the keys site key and secret key.Now put this where you want t
      <div class="g-recaptcha" data-sitekey="site-key"></div>
 
 {% endhighlight %}
+
+![recaptcha button](/images/hero-recaptcha-demo.jpg)
 
 Then clicking on the checkbox will open a default select image box:
 
