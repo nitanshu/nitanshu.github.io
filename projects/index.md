@@ -10,16 +10,17 @@ image:
 
 ## [OnePermission(2017)](https://onepermission.com)
 
-Engage agencies or freelancers without giving away your passwords. A simple click of a button allows you to provide and revoke access at any time giving you complete control over your domain.
-Technologies/API: Ruby, Rails, Jquery, Jscript, SAML IDP, Dropbox api V2, Github api, Google admin and analytics api, WordPress api, Facebook api, HighChart, OAUTH2, Brakeman, Mina
+Engage agencies or freelancers without giving away your passwords.
+A simple click of a button allows you to provide and revoke access at any time giving you complete control over your domain.
 
 ## Steps(2016-17)
 
-Take Steps is an initiative to add a missing link between two professionals from the same network. What makes it different is the idea that it connects a mentor and mentee based on similar professional interests in a mutual beneficial manner.
+Take Steps is an initiative to add a missing link between two professionals from the same network.
+What makes it different is the idea that it connects a mentor and mentee based on similar professional interests in a mutual beneficial manner.
 
 ## [Docademic(2016)](https://docademic.com/)
 
-Description: It is basically for both doctors and patients where a doctor can read journals about of their speciality and contact other doctor for help. Patient can store all their medical history.
+It is basically for both doctors and patients where a doctor can read journals about of their speciality and contact other doctor for help.Patient can store all their medical history.
 
 ## [Drawing View(2015-2016)](http://drawingview.com/)
 
@@ -31,7 +32,8 @@ Edswell brings together rich college data, application essays, test prep, colleg
 
 ## [Fedmitigate(2015)](https://fedmitigate.com/)
 
-It will help you to deploy effective framework for risk management for federally funded initiatives.This will also assist you to make informed decisions about the risks that affect your strategic, program, project and operational objectives. 
+It will help you to deploy effective framework for risk management for federally funded initiatives.
+This will also assist you to make informed decisions about the risks that affect your strategic, program, project and operational objectives. 
 
 ## [UrbanDashboard(Mobile app)(2015)](http://urbandashboard.com/)
 
@@ -43,7 +45,8 @@ A Project for setting up a meeting for a meal and donating for others meal such 
 
 ## [SampleApp(Rails)](http://tweetin.herokuapp.com/)
 
-This is also a testing app build while I was learning rails with the help of a book(M.hartl). It is test-driven development and tells every inch of rails for beginners.
+This is also a testing app build while I was learning rails with the help of a book(M.hartl).
+It is test-driven development and tells every inch of rails for beginners.
 
 You can checkout the [Source Code](https://github.com/nitanshu/sample_app).
 
