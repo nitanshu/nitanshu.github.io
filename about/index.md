@@ -8,10 +8,10 @@ image:
   feature: sample-image-2.jpg
 ---
 
-Hii, This is Nitanshu Verma ruby and rails developer lot to develop but more to innovate as this blog is intended to help others who may face
-problem regarding the topic I posted. This blog may tell lot about me as I am a developer so I started sharing good things for others.
+Hi, This is Nitanshu Verma, A Rubyist lot to develop but more to innovate.
+This blog is intended to help others facing the problems which I have faced earlier during my working.
 
-##Specialities:
+## Specialities:
 
 * Ruby
 
