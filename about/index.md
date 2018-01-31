@@ -17,11 +17,15 @@ problem regarding the topic I posted. This blog may tell lot about me as I am a 
 
 * Rails
 
+* JavaScript
+
 * jQuery
 
 * Git
 
->Live to develop and share not to brag on what you know!!!
+* Linux
+
+> Sharing is the best feeling ever, Try it with whatever you know.
 
 
 
